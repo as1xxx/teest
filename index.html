@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ПрофильСтрой</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#"><img src="img/logo.png" alt=""></a>
+        </div>
+        
+        <ul class="navbar">
+            <a href="#ps" class="nav"><li>О нас</li></a>
+            <a href="#top" class="nav"><li>Услуги</li></a>
+            <a href="#sn" class="nav"><li>Контакты</li></a>
+        </ul>
+        
+    </header>
+    <div class="op">
+        
+        <div class="text">
+            <p><b id="ps">ПрофильСтрой</b>- современная компания по стоительству домов. Мы гарантируем качественные услуги по постройке домов, все заказы в срок и  за низкую цену.</p>
+            
+        </div>
+        <img  src="img/Rectangle 1.jpg" alt="" class="dom">
+            
+    </div>
+    <a href="#top" class="nusl"> Наши услуги</a>
+    <div class="uslugi">
+        <div class="nnu">
+            <h1 id="top">Наши услуги</h1>
+        </div>
+        <div class="usluga">
+            <img src="img/img1.png" alt="" >
+            
+            
+            <p>Строительство фасада для дома. Делаем быстро и качественно.</p>
+            <div class="sv">
+                <a href="#sn">Связаться с нами</a>
+            </div>
+
+        </div>
+        <div class="usluga">
+            <img src="img/img2.png" alt="">
+            <p>Монтаж теплых стен. Делаем быстро и качественно.</p>
+            <div class="sv">
+                <a href="#sn">Связаться с нами</a>
+            </div>
+        </div>
+        <div class="usluga">
+            <img src="img/img3.png" alt="">
+            <p>Монтаж теплых полов. Делаем быстро и качественно.</p>
+            <div class="sv">
+                <a href="#sn">Связаться с нами</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <img class="nlogo" src="img/logo2.png" alt="">
+        <p class="ntext" id="sn">Свяжитесь с нами</p>
+        <p class="ntext">+7(999) 234-41-23</p>
+        
+        
+    </footer>
+</body>
+</html>
+<script type="text/javascript">
+    const anchors = document.querySelectorAll('a[href *= "#"]')
+
+for (let anchor of anchors){
+    anchor.addEventListener("click", function(e){
+        e.preventDefault();
+        const blockID = anchor.getAttribute('href')
+        document.querySelector('' + blockID).scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        })
+    })
+}
+</script>
